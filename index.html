@@ -65,7 +65,11 @@ hr{border:none;border-top:1px solid var(--line)}
 .card .who{font-family:var(--sans);font-weight:600;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--neutral)}
 @media(max-width:900px){.prova .grid{grid-template-columns:1fr}}
 
-.paraquem{background:var(--ink);color:#fff}
+.paraquem{position:relative;color:#fff;background:#000;overflow:hidden}
+.paraquem .bg-photo{position:absolute;inset:0;z-index:0}
+.paraquem .bg-photo img{width:100%;height:100%;object-fit:cover}
+.paraquem .overlay{position:absolute;inset:0;background:rgba(0,0,0,.62);z-index:1}
+.paraquem .container{position:relative;z-index:2}
 .paraquem h2{margin-bottom:48px;color:#fff}
 .paraquem ul{list-style:none;display:grid;gap:24px;max-width:760px}
 .paraquem li{display:grid;grid-template-columns:40px 1fr;gap:16px;font-family:var(--serif);font-size:22px;line-height:1.35;color:#fff;padding-bottom:24px;border-bottom:1px solid var(--lineDark)}
@@ -77,6 +81,9 @@ hr{border:none;border-top:1px solid var(--line)}
 .nao90 .cta-wrap{margin-top:32px}
 
 .ctaf{padding:160px 0;position:relative;overflow:hidden;text-align:center;background:#000;color:#fff}
+.ctaf .bg-photo{position:absolute;inset:0;z-index:0}
+.ctaf .bg-photo img{width:100%;height:100%;object-fit:cover}
+.ctaf .overlay{position:absolute;inset:0;background:rgba(0,0,0,.62);z-index:1}
 .ctaf .water{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:clamp(200px,28vw,400px);color:rgba(255,255,255,.07);pointer-events:none;line-height:1;white-space:nowrap;z-index:1}
 .ctaf .body{position:relative;z-index:2}
 .ctaf h2{color:#fff;max-width:18ch;margin:0 auto 40px}
@@ -164,6 +171,8 @@ footer .social a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4);padding
 </section>
 
 <section class="paraquem">
+  <div class="bg-photo"><img src="assets/visuais/visual-04.png" alt=""></div>
+  <div class="overlay"></div>
   <div class="container">
     <span class="eyebrow dark">Para quem é</span>
     <h2 style="margin-top:24px">Este workshop é para ti se <em>queres</em>:</h2>
@@ -186,6 +195,8 @@ footer .social a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4);padding
 </section>
 
 <section class="ctaf" id="cta">
+  <div class="bg-photo"><img src="assets/visuais/visual-09.png" alt=""></div>
+  <div class="overlay"></div>
   <div class="water">estratégia</div>
   <div class="body">
     <div class="container">

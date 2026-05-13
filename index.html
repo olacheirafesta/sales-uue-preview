@@ -297,5 +297,48 @@ footer .social a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4);padding
   </div>
 </footer>
 
+<!-- UTM Stripe Tracking — anexa UTMs ao client_reference_id dos links de pagamento -->
+<script>
+(function () {
+  function utmStringFromUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term"];
+    return keys
+      .map(function (k) {
+        var v = params.get(k);
+        return v ? k + "=" + encodeURIComponent(v) : null;
+      })
+      .filter(Boolean)
+      .join("&");
+  }
+
+  function rewriteStripeLinks() {
+    var utm = utmStringFromUrl();
+    if (!utm) return;
+
+    var links = document.querySelectorAll(
+      'a[href*="buy.stripe.com"], a[href*="checkout.stripe.com"]'
+    );
+
+    links.forEach(function (a) {
+      if (a.dataset.utmDone === "1") return;
+      try {
+        var url = new URL(a.href);
+        if (!url.searchParams.get("client_reference_id")) {
+          url.searchParams.set("client_reference_id", utm);
+          a.href = url.toString();
+        }
+        a.dataset.utmDone = "1";
+      } catch (e) {}
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    rewriteStripeLinks();
+    var intervalId = setInterval(rewriteStripeLinks, 1000);
+    setTimeout(function () { clearInterval(intervalId); }, 15000);
+  });
+})();
+</script>
 </body>
 </html>

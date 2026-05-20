@@ -90,11 +90,16 @@
 
   /* SECTION */
   section{padding:110px 0}
-  section h2{font-size:clamp(36px,4.6vw,64px);margin-bottom:24px;line-height:1.05}
+  section h2{font-size:clamp(30px,4.6vw,64px);margin-bottom:24px;line-height:1.08;word-wrap:break-word;overflow-wrap:break-word;hyphens:auto}
   section h2 em{font-style:italic}
   section .sec-eyebrow{display:block;font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
   section p{font-family:var(--sans);font-size:17px;line-height:1.7;color:#3a2e26;margin-bottom:18px}
   section p em{font-family:var(--serif);font-style:italic}
+  @media(max-width:760px){
+    section{padding:72px 0}
+    section p{font-size:15px}
+    .checklist li,.crosslist li{font-size:15px;padding:14px 0}
+  }
 
   .center{text-align:center}
 
@@ -149,17 +154,16 @@
   .print-slot.empty .placeholder{display:flex;position:absolute;inset:0;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--neutral)}
 
   /* TESTI */
-  .testi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
-  @media(max-width:1000px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:560px){.testi-grid{grid-template-columns:1fr}}
-  .testi{padding:28px 24px;background:#fff;border:1px solid var(--rose);display:flex;flex-direction:column;gap:20px}
+  .testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+  @media(max-width:680px){.testi-grid{grid-template-columns:1fr;gap:20px}}
+  .testi{padding:24px;background:#fff;border:1px solid var(--rose);display:flex;flex-direction:column;gap:18px}
   .testi .who{display:flex;align-items:center;gap:14px}
-  .testi .avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(0,0,0,.06) 0 8px,transparent 8px 16px);flex-shrink:0;border:2px solid var(--rose)}
+  .testi .avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(0,0,0,.06) 0 8px,transparent 8px 16px);flex-shrink:0;border:2px solid var(--rose)}
   .testi .avatar img{width:100%;height:100%;object-fit:cover}
   .testi .name{font-family:var(--serif);font-size:17px;line-height:1.1;margin-bottom:3px}
   .testi .role{font-family:var(--sans);font-weight:700;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--neutral)}
-  .testi .print{overflow:hidden;display:flex;align-items:flex-start;justify-content:flex-start;min-height:240px}
-  .testi .print img{max-width:100%;width:auto;height:auto;display:block;object-fit:contain}
+  .testi .print{overflow:hidden;display:flex;align-items:flex-start;justify-content:center}
+  .testi .print img{max-width:100%;width:100%;height:auto;display:block;object-fit:contain}
 
   /* RECEBES BOX */
   .recebes-section{padding:110px 0;background:var(--bg)}

@@ -116,9 +116,10 @@
   .crosslist li{color:#6b5a4d}
   .checklist li em,.crosslist li em{font-style:italic}
 
-  /* 3 STEPS */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
-  @media(max-width:760px){.steps{grid-template-columns:1fr}}
+  /* 3/4 STEPS */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+  @media(max-width:960px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.steps{grid-template-columns:1fr}}
   .step{padding:40px 32px;background:#fff;border:1px solid var(--rose);position:relative;transition:transform .25s}
   .step:hover{transform:translateY(-4px)}
   .step .n{font-family:var(--serif);font-style:italic;font-size:72px;line-height:1;color:var(--accent);margin-bottom:14px}
@@ -228,8 +229,8 @@
       <div>
         <span class="tag">Workshop Gravado · Acesso Imediato</span>
         <h1>Uma <em>Única</em> Estratégia<sup>™</sup></h1>
-        <p class="lead" style="font-family:var(--serif);font-size:24px;color:var(--ink);margin-bottom:24px"><strong style="font-weight:500">Para ter clientes ideais todos os meses e criar previsibilidade no teu negócio de eventos.</strong></p>
-        <p class="lead">Mesmo que já tenhas clientes e recebas recomendações, mas queiras crescer com clientes que querem, <em>Preço Justo</em>™ e um sistema previsível para ter clientes todos os meses sem competir por preço.</p>
+        <p class="lead" style="font-family:var(--serif);font-size:24px;color:var(--ink);margin-bottom:24px"><strong style="font-weight:500">Como atrair <em>clientes ideais</em> todos os meses no teu negócio de eventos.</strong></p>
+        <p class="lead">Mesmo que já tenhas presença online, publiques nas redes sociais e recebas algumas recomendações, mas queiras criar uma estratégia simples e consistente para gerar pedidos de orçamento <em>de forma previsível</em>.</p>
       </div>
       <div class="hero-photo">
         <img src="assets/adriana-hero-evento.png" alt="Adriana Cheira'Festa"/>
@@ -280,21 +281,35 @@
   </div>
 </section>
 
-<!-- CHEGOU O TEU MOMENTO -->
+<!-- JÁ TENS UM NEGÓCIO DE EVENTOS -->
 <section>
   <div class="narrow">
-    <span class="sec-eyebrow">Se já tens um negócio, mas…</span>
-    <h2>Chegou o teu momento <em>de crescer</em>.</h2>
-    <p>Se já tens um negócio de eventos, mas sentes que:</p>
+    <span class="sec-eyebrow">Já tens um negócio de eventos…</span>
+    <h2>Mas sentes que os clientes <em>não chegam com a consistência</em> que desejas?</h2>
     <ul class="crosslist">
-      <li>Tens clientes, mas <em>não os que realmente queres</em>.</li>
-      <li>Os clientes dizem que está caro ou <em>pedem descontos</em>.</li>
-      <li>Não tens clientes <em>todos os meses</em>.</li>
-      <li>Envias propostas e <em>ficas à espera de resposta</em>.</li>
-      <li>Trabalhas muito, mas <em>os resultados não acompanham</em>.</li>
-      <li>O teu negócio ainda depende demasiado <em>da sorte e das recomendações</em>.</li>
+      <li>Há meses em que recebes vários pedidos e <em>outros em que o telefone não toca</em>.</li>
+      <li>Publicas nas redes sociais, mas isso <em>nem sempre se traduz em pedidos de orçamento</em>.</li>
+      <li>Recebes contactos que <em>não valorizam o teu trabalho</em>.</li>
+      <li>Continuas dependente <em>do boca-a-boca, plataformas ou feiras</em>.</li>
+      <li>Sentes que estás a fazer "um pouco de tudo", <em>mas sem previsibilidade</em>.</li>
     </ul>
-    <p style="font-family:var(--serif);font-style:italic;font-size:24px;color:var(--ink);margin-top:16px">Então este workshop foi criado <em style="color:var(--accent)">para ti</em>.</p>
+    <p style="font-family:var(--serif);font-style:italic;font-size:24px;color:var(--ink);margin-top:16px">Se te identificas com isto, este workshop foi criado <em style="color:var(--accent)">para ti</em>.</p>
+  </div>
+</section>
+
+<!-- O PROBLEMA NÃO É FALTA DE TALENTO -->
+<section class="band">
+  <div class="narrow" style="text-align:left">
+    <span class="sec-eyebrow">O problema não é falta de talento</span>
+    <h2>O problema é <em>não ter uma estratégia clara</em>.</h2>
+    <p>Hoje, qualquer profissional pode usar o digital para chegar aos clientes certos. Mas a maioria limita-se a:</p>
+    <ul class="crosslist">
+      <li>Ter uma página nas redes sociais.</li>
+      <li>Criar um site.</li>
+      <li>Estar em plataformas como o <em>Casamentos.pt</em>.</li>
+      <li>E esperar que os pedidos de orçamento <em>apareçam</em>.</li>
+    </ul>
+    <p style="font-family:var(--serif);font-style:italic;font-size:22px;color:var(--ink);margin-top:20px">O que realmente faz a diferença é ter uma <em>estratégia simples</em>, que possas aplicar, medir e repetir.</p>
   </div>
 </section>
 
@@ -304,37 +319,42 @@
     <img src="assets/adriana-eu-fui.jpg" alt="Adriana"/>
   </div>
   <div class="story-copy">
-    <span class="sec-eyebrow">Eu fui</span>
-    <h2 style="font-size:clamp(36px,4.4vw,56px)">De eventos de <em>300€</em> para eventos de <em>50.000€</em>.</h2>
-    <p>Quando comecei, cheguei a fazer eventos de 300€. Trabalhava muito. Aceitava qualquer cliente. Baixava preços. E sentia que estava sempre ocupada, mas sem os resultados que desejava.</p>
-    <p class="quote">Até perceber: não precisava de fazer mais eventos. Precisava <em>de um sistema</em>.</p>
-    <p>Foi esse sistema que me permitiu fazer eventos de 14.000€ no início do negócio, realizar eventos de 50.000€, trabalhar com clientes que valorizam o meu trabalho e construir um negócio que sustenta o estilo de vida que escolhi para mim e para a minha família.</p>
-    <p style="font-family:var(--serif);font-style:italic;font-size:22px;color:var(--ink);margin-top:20px">Hoje vou partilhar esse sistema <em>contigo</em>.</p>
+    <span class="sec-eyebrow">A estratégia</span>
+    <h2 style="font-size:clamp(36px,4.4vw,56px)">A estratégia que me permitiu <em>ter clientes todos os meses</em>.</h2>
+    <p>Quando criei o meu negócio de eventos, investi apenas <em>10€</em> num anúncio. Esse teste gerou centenas de interessados e mais de <em>100 pedidos de orçamento</em>.</p>
+    <p>Na altura, eu ainda não tinha tudo estruturado. Mas percebi algo muito importante:</p>
+    <p class="quote">Não precisava de inventar uma estratégia nova todos os meses. Precisava de aplicar <em>a mesma estratégia</em> de forma consistente.</p>
+    <p>Foi assim que construí um negócio com <em>clientes ideais</em>, <em>Preço Justo</em>™ e previsibilidade. E é exactamente essa estratégia que partilho neste workshop.</p>
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
+<!-- A UMA ÚNICA ESTRATÉGIA -->
 <section>
   <div class="container center">
     <span class="sec-eyebrow">Como funciona</span>
-    <h2>O método em <em>3 passos</em>.</h2>
-    <p style="max-width:660px;margin:0 auto">As três fases de Uma Única Estratégia™ que aplico no meu negócio e ensino às empreendedoras EBS.</p>
+    <h2>A <em>Uma Única Estratégia</em>™</h2>
+    <p style="max-width:660px;margin:0 auto">Um sistema simples de <em>4 passos</em> que aplico no meu negócio e ensino às empreendedoras EBS.</p>
 
     <div class="steps">
       <div class="step">
         <div class="n">1</div>
-        <h3><em>Encanta</em></h3>
-        <p>Atrai pessoas certas todos os meses, com a mensagem certa, no lugar certo. Sem depender de algoritmos.</p>
+        <h3><em>Criar</em></h3>
+        <p>Conteúdo que atrai e encanta os clientes ideais.</p>
       </div>
       <div class="step">
         <div class="n">2</div>
-        <h3><em>Destaca</em></h3>
-        <p>Mostra um diferencial único que faz com que o preço deixe de ser comparado e passe a ser desejado.</p>
+        <h3><em>Anunciar</em></h3>
+        <p>Levar esse conteúdo às pessoas certas.</p>
       </div>
       <div class="step">
         <div class="n">3</div>
-        <h3><em>Oferece</em></h3>
-        <p>Transforma propostas em "onde é que eu pago?". Um processo simples, repetível, previsível.</p>
+        <h3><em>Analisar</em></h3>
+        <p>Medir os resultados e perceber o que funciona.</p>
+      </div>
+      <div class="step">
+        <div class="n">4</div>
+        <h3><em>Repetir</em></h3>
+        <p>Fazer mais do que já provou trazer resultados.</p>
       </div>
     </div>
   </div>
@@ -346,28 +366,27 @@
     <span class="sec-eyebrow">O que vais aprender</span>
     <h2>Cinco passos para um <em>negócio previsível</em>.</h2>
     <ul class="checklist">
-      <li>Como transformar o teu objetivo em <em>números concretos</em>.</li>
-      <li>Como definir um serviço <em>altamente desejado</em>.</li>
-      <li>Como criar um diferencial único e <em>deixar de competir por preço</em>.</li>
-      <li>Como aplicar <em>Uma Única Estratégia</em>™ para atrair interessados todos os meses.</li>
-      <li>Como transformar propostas em clientes que dizem <em>"onde é que eu pago?"</em></li>
+      <li>Como definir um <em>objetivo claro</em> e saber exactamente quantos clientes precisas atrair.</li>
+      <li>Como criar conteúdo que <em>gera interesse</em> e faz com que as pessoas certas peçam orçamento.</li>
+      <li>Como usar anúncios <em>de forma simples</em> para aumentar o alcance do teu conteúdo.</li>
+      <li>Como <em>analisar resultados</em> e tomar decisões com base em dados.</li>
+      <li>Como repetir o que funciona, <em>sem dispersar</em> em estratégias novas todos os meses.</li>
     </ul>
   </div>
 </section>
 
-<!-- O QUE NÃO PRECISAS -->
+<!-- O QUE VAIS CONSEGUIR -->
 <section>
   <div class="narrow">
-    <span class="sec-eyebrow">O que NÃO precisas</span>
-    <h2>Para começar <em>já hoje</em>.</h2>
-    <ul class="crosslist">
-      <li>NÃO precisas de estar em todas as redes sociais.</li>
-      <li>NÃO precisas de baixar preços para conseguir clientes.</li>
-      <li>NÃO precisas de ter milhares de seguidores.</li>
-      <li>NÃO precisas de gastar fortunas em anúncios.</li>
-      <li>NÃO precisas de fazer mais eventos do que aqueles que aguentas.</li>
+    <span class="sec-eyebrow">O que vais conseguir</span>
+    <h2>Ao final do workshop, <em>vais ter</em>.</h2>
+    <ul class="checklist">
+      <li>Clareza sobre o <em>objetivo da tua estratégia</em>.</li>
+      <li>Um plano simples para <em>criar, anunciar, analisar e repetir</em>.</li>
+      <li>Mais confiança no <em>marketing do teu negócio</em>.</li>
+      <li>Um sistema que podes aplicar <em>de forma consistente</em>.</li>
+      <li>Maior previsibilidade na <em>geração de pedidos de orçamento</em>.</li>
     </ul>
-    <p style="font-family:var(--serif);font-style:italic;font-size:24px;color:var(--ink);margin-top:20px">Só precisas <em style="color:var(--accent)">de um sistema</em>.</p>
   </div>
 </section>
 
@@ -385,12 +404,21 @@
     <h2>Este workshop <em>é para ti se…</em></h2>
     <ul class="checklist">
       <li>Já tens um negócio de eventos em funcionamento.</li>
-      <li>Queres crescer com clientes <em>únicos</em>.</li>
-      <li>Queres aumentar os teus preços.</li>
-      <li>Queres deixar de competir por preço.</li>
-      <li>Queres criar previsibilidade no teu negócio.</li>
-      <li>Queres viver de eventos com liberdade.</li>
+      <li>Queres crescer com <em>mais consistência</em>.</li>
+      <li>Queres atrair <em>clientes mais alinhados</em>.</li>
+      <li>Queres deixar de depender <em>apenas de recomendações</em>.</li>
+      <li>Queres um sistema <em>simples e replicável</em>.</li>
     </ul>
+
+    <div style="margin-top:64px">
+      <span class="sec-eyebrow">E não é para ti se…</span>
+      <h2>Este workshop <em>não é para ti se…</em></h2>
+      <ul class="crosslist">
+        <li>Procuras uma <em>fórmula mágica</em> sem implementação.</li>
+        <li>Queres testar uma estratégia <em>diferente todas as semanas</em>.</li>
+        <li>Não estás disposta a <em>analisar resultados</em> e repetir o que funciona.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -467,7 +495,7 @@
       <span class="sec-eyebrow">Quem é a</span>
       <div class="name">Adriana <em>Cheira'Festa</em></div>
       <div class="role">Fundadora · Event Business School™</div>
-      <p>Nos últimos 6 anos, ajudei mais de <em>350 profissionais de eventos</em> a crescer com clientes que querem, <em>Preço Justo</em>™ e um negócio previsível.</p>
+      <p>Ajudo profissionais de eventos a crescer com <em>clientes ideais</em>, <em>Preço Justo</em>™ e um negócio mais previsível.</p>
       <p>Comecei a fazer eventos de 300€ e hoje realizo eventos de 50.000€, com um sistema que ensino dentro da Event Business School™.</p>
     </div>
   </div>
@@ -481,12 +509,10 @@
       <h2>Antes <em>de avançares</em>.</h2>
     </div>
     <div class="faq-list">
-      <details><summary>Quando recebo acesso?</summary><p>Imediatamente após a confirmação do pagamento.</p></details>
-      <details><summary>Durante quanto tempo tenho acesso?</summary><p>O acesso é ilimitado, sem prazo de expiração.</p></details>
-      <details><summary>Preciso de assistir ao vivo?</summary><p>Não. O workshop está gravado e podes ver ao teu ritmo, em qualquer dispositivo.</p></details>
-      <details><summary>Funciona para o meu serviço?</summary><p>Sim, se prestas qualquer serviço ligado aos eventos: <em>wedding planning</em>, decoração, fotografia, vídeo, <em>catering</em>, música, espaços e outros.</p></details>
-      <details><summary>Sou iniciante. Posso assistir?</summary><p>O workshop foi criado para profissionais que já atuam no mercado e querem crescer com previsibilidade e rentabilidade.</p></details>
-      <details><summary>Como é o pagamento?</summary><p>Pagamento único de 47€ via Stripe (cartão, MB Way e outros). 100% seguro.</p></details>
+      <details><summary>Quando recebo acesso?</summary><p>Imediatamente após o pagamento.</p></details>
+      <details><summary>Durante quanto tempo tenho acesso?</summary><p>O acesso é ilimitado.</p></details>
+      <details><summary>Preciso de assistir ao vivo?</summary><p>Não. O workshop está gravado e disponível para veres ao teu ritmo.</p></details>
+      <details><summary>Este workshop funciona para o meu negócio?</summary><p>Sim, se prestas qualquer serviço ligado aos eventos: <em>wedding planning</em>, decoração, fotografia, vídeo, música, espaços, <em>catering</em> e outros.</p></details>
     </div>
   </div>
 </section>
@@ -495,8 +521,8 @@
 <section class="final">
   <div class="container">
     <span class="eyebrow light">Última chamada</span>
-    <h2>O objetivo não é fazer <em>mais eventos</em>.<br>É construir um <em>negócio</em> que te dá liberdade.</h2>
-    <p class="sub">Ter clientes ideais que pagam o teu <em>Preço Justo</em>™. Trabalhar com previsibilidade.</p>
+    <h2>O crescimento não vem <em>de fazer mais</em>.<br>Vem de <em>repetir o que já funciona</em>.</h2>
+    <p class="sub">Se queres atrair <em>clientes ideais</em> de forma mais consistente e construir um negócio com maior previsibilidade, este workshop vai mostrar-te o caminho.</p>
 
     <div class="price-block">
       <div class="row">
